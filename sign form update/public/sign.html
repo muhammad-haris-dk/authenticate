@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: rgb(242, 242, 242);
+      color: black;
+      margin-top: 200px;
+      font-size: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #in {
+      background-color: white;
+      color: black;
+      width: 350px;
+
+      border: 2px solid white;
+      border-radius: 15px;
+      /* padding: 30px; */
+      text-align: center;
+    }
+    #email {
+      width: 270px;
+      border-radius: 35px;
+      padding: 17px;
+      border: 3px solid rgb(242, 242, 242);
+    }
+    #password {
+      width: 270px;
+      border-radius: 35px;
+      padding: 17px;
+      border: 3px solid rgb(242, 242, 242);
+    }
+    #btn {
+      padding: 10px;
+      border-radius: 35px;
+      width: 250px;
+      background: linear-gradient(
+        90deg,
+        rgba(102, 139, 231, 1) 0%,
+        rgba(130, 86, 227, 1) 35%,
+        rgba(244, 0, 255, 1) 100%
+      );
+      color: white;
+      border: 3px solid rgb(242, 242, 242);
+      font-size: 20px;
+    }
+    .linear {
+      background: linear-gradient(
+        90deg,
+        rgba(102, 139, 231, 1) 0%,
+        rgba(130, 86, 227, 1) 35%,
+        rgba(244, 0, 255, 1) 100%
+      );
+      padding: 20px;
+      color: white;
+      text-align: center;
+      border-start-start-radius: 15px;
+      top: 0;
+      border-start-end-radius: 15px;
+    }
+    /* .botom {
+      margin-bottom: 20px;
+    } */
+    .forget {
+      font-size: 15px;
+      margin-left: -150px;
+      /* border: none;
+      background-color: white;
+      color: blue;
+      cursor: pointer;
+      text-decoration: underline; */
+    }
+    .forget:hover{
+        color: red;
+    }
+    .create {
+      font-size: 18px;
+    }
+  </style>
+  <body>
+    <div id="center">
+      <div id="in">
+        <h1 class="linear">Sign in</h1>
+        <br />
+        <div>
+          <input placeholder="Enter Your Email" id="email" type="text" />
+        </div>
+        <br />
+        <div>
+          <input
+            placeholder="Enter Your Password"
+            id="password"
+            type="password"
+          />
+        </div>
+        <!-- <button onclick="forgetPassword()" class="forget">Forget Password</button> -->
+        <a href="#" onclick="forgetPassword()" class="forget">Forget Password</a>
+        <br /><br />
+        <div class="botom">
+          <button id="btn" onclick="signin()">sign in</button>
+        </div>
+        <div>
+          <a class="create" href="index.html"
+            >Create Your Account</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="sign.js"></script>
+  </body>
+</html>

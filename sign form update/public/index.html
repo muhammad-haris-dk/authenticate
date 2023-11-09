@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: rgb(242, 242, 242);
+        color: black;
+        margin-top: 200px;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #in{
+        background-color: white;
+        color: black;
+        width: 350px;
+        
+        border: 2px solid white;
+        border-radius: 15px;
+        /* padding: 30px; */
+        text-align: center;
+    }
+    #email{
+        width: 270px;
+        border-radius: 35px;
+        padding: 17px;
+        border: 3px solid rgb(242, 242, 242);
+    }
+    #password{
+        width: 270px;
+        border-radius: 35px;
+        padding: 17px;
+        border: 3px solid rgb(242, 242, 242);
+    }
+    #btn{
+        padding: 10px;
+        border-radius: 35px;
+        width: 250px;
+        background: linear-gradient(90deg, rgba(102,139,231,1) 0%, rgba(130,86,227,1) 35%, rgba(244,0,255,1) 100%);
+        color: white;
+        border: 3px solid rgb(242, 242, 242);
+        font-size: 20px;
+    }
+    .linear{
+        background: linear-gradient(90deg, rgba(102,139,231,1) 0%, rgba(130,86,227,1) 35%, rgba(244,0,255,1) 100%);
+        padding: 20px;
+        color: white;
+        text-align: center;
+        border-start-start-radius: 15px;
+        top: 0;
+        border-start-end-radius: 15px;
+    }
+    .botom{
+        margin-bottom: 20px;
+    }
+    .a{
+        font-size: 15px;
+    }
+    .google{
+        border: 1px solid black;
+        border-radius: 50px;
+        background-color: #fff;
+        padding: 10px;
+        font-size: 15px;
+        width: 180px;
+    }.google:hover{
+        background-color: black;
+        color: white;
+        transition: 0.5s;
+    }
+    .github{
+        border: 1px solid black;
+        border-radius: 50px;
+        background-color: #fff;
+        padding: 10px;
+        font-size: 15px;
+        width: 180px;
+    }.github:hover{
+        background-color: black;
+        color: white;
+        transition: 0.5s;
+    }
+</style>
+<body>
+
+
+
+        <div id="center">
+            <div id="in">
+                <h1 class="linear">Sign up</h1><br>
+                <div>
+                    <input placeholder="Create Your Email" id="email" type="text">
+                </div><br>
+                <div>
+                    <input placeholder="Create Your Password" id="password" type="password">
+                </div><br>
+                <div class="botom">
+                    <button id="btn" onclick="btn()">sign up</button>
+                </div>
+                <div >
+                    <button class="google" onclick="loginWithGoogle()">Sign up with Google</button>
+                </div><br>
+                <div >
+                    <button class="github" onclick="loginwithgithub()">Sign up with Github</button>
+                </div>
+                <div class="already">
+                    <a class="a" href="sign.html">Already have an Account Sign in...</a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

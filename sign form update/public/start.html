@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    body{
+        background-color: rgb(236, 231, 231);
+        margin-top: 250px;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-in{
+        border: 1px solid black;
+        width: 300px;
+        border-radius: 15px;
+        height: 250px;
+        /* padding: 70px; */
+        text-align: center;
+        background-color: white;
+    }
+    .sign-in{
+        border-radius: 50px;
+        width: 150px;
+        font-size: 18px;
+        border: 1px solid rgb(230, 227, 227);
+        padding: 12px;
+        background-color: black;
+        color:white;
+
+    }
+    .sign-in:hover{
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+    }
+    .sign-up{
+        border-radius: 50px;
+        width: 150px;
+        font-size: 18px;
+        border: 1px solid rgb(230, 227, 227);
+        padding: 12px;
+        background-color: black;
+        color:white;
+    }
+    .sign-up:hover{
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+    }
+    .form{
+        background-color: aqua;
+        border-start-start-radius: 15px;
+        border-start-end-radius: 15px;
+        padding: 12px;
+    }
+</style>
+<body>
+    <div class="main">
+    <div class="main-in">
+    <h1 class="form">Form</h1><br><br>
+        <div>
+            <button onclick="signin()" class="sign-in">Sign in</button>
+        </div><br>
+        <div>
+            <button onclick="signup()" class="sign-up">Sign up</button>
+        </div>
+    </div>
+    </div>
+
+
+
+    <script>
+        function signup(){
+            window.location.href = "index.html"
+        }
+        function signin(){
+            window.location.href = "sign.html"
+        }
+    </script>
+</body>
+</html>
